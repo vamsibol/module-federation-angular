@@ -4,10 +4,6 @@ const {
 } = require("@angular-architects/module-federation/webpack");
 
 module.exports = withModuleFederationPlugin({
-  remotes: {
-    fruits: "http://localhost:4201/remoteEntry.js",
-  },
-
   shared: {
     ...shareAll({
       singleton: true,
